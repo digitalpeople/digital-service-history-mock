@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getCars should app.get with correct path 1`] = `
+Array [
+  "/cars/",
+  "getCarsHandlerMockFunction",
+]
+`;
+
+exports[`getCarsById should app.get with correct path 1`] = `
+Array [
+  "/cars/:id/",
+  "getCarsByIdHandlerMockFunction",
+]
+`;

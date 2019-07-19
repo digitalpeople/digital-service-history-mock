@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getCarsByIdHandler should call getJson with correct path 1`] = `
+Array [
+  "data/cars-by-id.json",
+  Object {
+    "foo": "bar",
+  },
+]
+`;
+
+exports[`getCarsHandler should call getJson with correct path 1`] = `
+Array [
+  "data/cars.json",
+  Object {
+    "foo": "bar",
+  },
+]
+`;

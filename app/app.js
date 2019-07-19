@@ -1,15 +1,13 @@
 import express from 'express';
 import getJson from './utils/get-json';
 import isEqualParam from './utils/is-equal-param';
+import useRoutes from './routes/use-routes';
 
 const app = express();
 
-app.get('/', (request, response) => response.send('Mock service for car log application.'));
+app.get('/', (request, response) => response.send('Digital service history mock.'));
 
-app.get('/cars/', (request, response) => {
-  const path = 'data/cars.json';
-  getJson(path, response);
-});
+useRoutes(app);
 
 app.get('/cars/:id/events', (request, response) => {
   const path = isEqualParam(request, 'id', '1') ? 'data/events.json' : null;
