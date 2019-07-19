@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`responseHandler should handle if any error happens 1`] = `404`;
+
+exports[`responseHandler should handle if no error happens 1`] = `
+Object {
+  "foo": "bar",
+}
+`;

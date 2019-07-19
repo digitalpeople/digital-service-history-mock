@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getJson should append response Content-Type 1`] = `"Content-Type"`;
+
+exports[`getJson should call fs.readFile 1`] = `"./test.json"`;
