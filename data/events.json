@@ -1,0 +1,74 @@
+[
+  {
+    "eventId": 0,
+    "carId": 1,
+    "eventType": "Fuel",
+    "eventDate": "2019-06-13",
+    "odometer": 207966,
+    "cost": 20439,
+    "description": "MOL"
+  },
+  {
+    "eventId": 1,
+    "carId": 1,
+    "eventType": "Tax",
+    "eventDate": "2019-06-17",
+    "odometer": 208186,
+    "cost": 18500,
+    "description": "Eredetiségvizsgálat"
+  },
+  {
+    "eventId": 2,
+    "carId": 1,
+    "eventType": "Tax",
+    "eventDate": "2019-06-17",
+    "odometer": 208196,
+    "cost": 36000,
+    "description": "Vagyonszerzési illeték"
+  },
+  {
+    "eventId": 3,
+    "carId": 1,
+    "eventType": "Tax",
+    "eventDate": "2019-06-17",
+    "odometer": 208196,
+    "cost": 6000,
+    "description": "Forgalmi engedély"
+  },
+  {
+    "eventId": 4,
+    "carId": 1,
+    "eventType": "Tax",
+    "eventDate": "2019-06-17",
+    "odometer": 208196,
+    "cost": 6000,
+    "description": "Törzskönyv"
+  },
+  {
+    "eventId": 5,
+    "carId": 1,
+    "eventType": "Maintenance",
+    "eventDate": "2019-06-20",
+    "odometer": 208198,
+    "cost": 0,
+    "description": "Pollenszűrő csere, klíma tisztítás"
+  },
+  {
+    "eventId": 6,
+    "carId": 1,
+    "eventType": "Service",
+    "eventDate": "2019-06-29",
+    "odometer": 208330,
+    "cost": 0,
+    "description": "Porszívózás + külsőmosás + kárpittisztítás"
+  },
+  {
+    "eventId": 7,
+    "carId": 1,
+    "eventType": "Fuel",
+    "eventDate": "2019-07-08",
+    "odometer": 208658,
+    "cost": 19897,
+    "description": "MOL"
+  }
+]

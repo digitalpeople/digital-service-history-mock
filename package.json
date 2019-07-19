@@ -1,0 +1,43 @@
+{
+  "name": "digital-service-history-mock",
+  "version": "0.0.1",
+  "description": "Mock service of digital service history to aid front-end development.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalpeople/digital-service-history-mock"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "babel-node server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "jest --coverage",
+    "test:clean": "jest --clearCache"
+  },
+  "author": "adam.hegedus@yandex.ru",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.7.2",
+    "jest": "^24.8.0",
+    "prettier": "1.18.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "verbose": true
+  }
+}
