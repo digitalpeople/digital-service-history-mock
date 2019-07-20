@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getEventsByIdHandler should call getJson with correct path 1`] = `
+Array [
+  "data/events-by-id.json",
+  Object {
+    "foo": "bar",
+  },
+]
+`;
+
+exports[`getEventsHandler should call getJson with correct path when request.params.id is 1 1`] = `
+Array [
+  "data/events.json",
+  Object {
+    "foo": "bar",
+  },
+]
+`;
+
+exports[`getEventsHandler should call getJson with correct path when request.params.id is not 1 1`] = `
+Array [
+  null,
+  Object {
+    "foo": "bar",
+  },
+]
+`;
