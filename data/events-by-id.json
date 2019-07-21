@@ -1,0 +1,9 @@
+{
+  "eventId": 7,
+  "carId": 1,
+  "eventType": "Fuel",
+  "eventDate": "2019-07-08",
+  "odometer": 208658,
+  "cost": 19897,
+  "description": "MOL"
+}
