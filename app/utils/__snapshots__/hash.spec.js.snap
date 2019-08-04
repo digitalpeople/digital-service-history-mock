@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`comparePassword should call bcrypt.compare with given parameters 1`] = `"mock-password"`;
+
+exports[`hashPassword should call bcrypt.hash with given parameters 1`] = `"mock-password"`;
