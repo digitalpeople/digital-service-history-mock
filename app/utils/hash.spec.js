@@ -17,7 +17,7 @@ describe('hashPassword', () => {
 
     hashPassword(password);
 
-    expect(bcrypt.hash.mock.calls[0][0]).toMatchSnapshot();
+    expect(bcrypt.hash.mock.calls[0]).toMatchSnapshot();
   });
 });
 
@@ -28,8 +28,8 @@ describe('comparePassword', () => {
     const password = 'mock-password';
     const targetPassword = 'stored-password';
 
-    comparePassword(password), targetPassword;
+    comparePassword(password, targetPassword);
 
-    expect(bcrypt.compare.mock.calls[0][0]).toMatchSnapshot();
+    expect(bcrypt.compare.mock.calls[0]).toMatchSnapshot();
   });
 });
