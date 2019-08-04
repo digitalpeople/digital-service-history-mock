@@ -1,23 +1,54 @@
-import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 import getJson from '../../utils/get-json';
+import {
+  comparePassword,
+} from '../../utils/password';
+import jwtKey from '../../../data/mock-jwt-key';
+import {
+  mockUsername,
+  mockPassword,
+} from '../../../data/mock-credentials';
 
-export const postLoginHandler = (request, response) => {
-  bcrypt.hash(request.body.password, 10, (error, hash) => {
-    let valid;
-    bcrypt.compare('jelszo', hash, (err, res) => {
-      valid = res;
+export const postLoginHandler = async (request, response) => {
+  const {
+    username,
+    password,
+  } = request.body;
 
-      response.send({
-        user: request.body.user,
-        password: request.body.password,
-        hash,
-        valid,
-      });
+  const usernameMatch = username === mockUsername;
+  const passwordMatch = await comparePassword(password, await mockPassword);
+
+  if (usernameMatch && passwordMatch) {
+    const token = jwt.sign(
+      {
+        username,
+      },
+      jwtKey,
+      {
+        expiresIn: '1h',
+      },
+    );
+
+    response.send({
+      token,
     });
-  });
+  } else {
+    response.sendStatus(401);
+  }
 
-  // const path = 'data/cars.json';
-  // getJson(path, response);
+  const token = jwt.sign(
+    {
+      userId: 1,
+    },
+    jwtKey,
+    {
+      expiresIn: '1h',
+    },
+  );
+
+  response.send({
+    token,
+  });
 };
 
 export const getCarsByIdHandler = (request, response) => {
