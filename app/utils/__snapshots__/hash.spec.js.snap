@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`comparePassword should call bcrypt.compare with given parameters 1`] = `
+exports[`compare should call bcrypt.compare with given parameters 1`] = `
 Array [
   "mock-password",
   "stored-password",
 ]
 `;
 
-exports[`hashPassword should call bcrypt.hash with given parameters 1`] = `
+exports[`hash should call bcrypt.hash with given parameters 1`] = `
 Array [
   "mock-password",
   10,

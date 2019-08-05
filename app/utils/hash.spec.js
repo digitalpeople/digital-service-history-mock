@@ -1,34 +1,34 @@
 import bcrypt from 'bcrypt';
 import {
-  hashPassword,
-  comparePassword,
-} from './password';
+  hash,
+  compare,
+} from './hash';
 
 jest.mock('bcrypt', () => ({
   hash: jest.fn(),
   compare: jest.fn(),
 }));
 
-describe('hashPassword', () => {
+describe('hash', () => {
   it('should call bcrypt.hash with given parameters', () => {
     expect.assertions(1);
 
     const password = 'mock-password';
 
-    hashPassword(password);
+    hash(password);
 
     expect(bcrypt.hash.mock.calls[0]).toMatchSnapshot();
   });
 });
 
-describe('comparePassword', () => {
+describe('compare', () => {
   it('should call bcrypt.compare with given parameters', () => {
     expect.assertions(1);
 
     const password = 'mock-password';
     const targetPassword = 'stored-password';
 
-    comparePassword(password, targetPassword);
+    compare(password, targetPassword);
 
     expect(bcrypt.compare.mock.calls[0]).toMatchSnapshot();
   });

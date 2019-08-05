@@ -9,7 +9,7 @@ jest.mock('./events-handler', () => ({
 }));
 
 describe('getEvents', () => {
-  it('should app.get with correct path', () => {
+  it('should call app.get with correct path', () => {
     expect.assertions(1);
 
     const app = {
@@ -23,7 +23,7 @@ describe('getEvents', () => {
 });
 
 describe('getEventsById', () => {
-  it('should app.get with correct path', () => {
+  it('should call app.get with correct path', () => {
     expect.assertions(1);
 
     const app = {

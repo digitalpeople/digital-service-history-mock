@@ -1,6 +1,6 @@
-import { hashPassword } from '../app/utils/password';
+import { hash } from '../app/utils/hash';
 
 const mockUsername = 'test';
-const mockPassword = hashPassword('12345');
+const mockPassword = hash('12345');
 
 export { mockUsername, mockPassword };

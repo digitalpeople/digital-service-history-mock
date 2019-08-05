@@ -9,7 +9,7 @@ jest.mock('./cars-handler', () => ({
 }));
 
 describe('getCars', () => {
-  it('should app.get with correct path', () => {
+  it('should call app.get with correct path', () => {
     expect.assertions(1);
 
     const app = {
@@ -23,7 +23,7 @@ describe('getCars', () => {
 });
 
 describe('getCarsById', () => {
-  it('should app.get with correct path', () => {
+  it('should call app.get with correct path', () => {
     expect.assertions(1);
 
     const app = {
