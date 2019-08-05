@@ -24,3 +24,5 @@ export const postLoginHandler = async (request, response) => {
     response.sendStatus(401);
   }
 };
+
+export default postLoginHandler;
