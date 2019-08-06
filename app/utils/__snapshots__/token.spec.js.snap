@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createToken should call jwt.sign 1`] = `
+Array [
+  Object {
+    "username": "mock-username",
+  },
+  "mock jwt key",
+  Object {
+    "expiresIn": "1h",
+  },
+]
+`;

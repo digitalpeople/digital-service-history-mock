@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`postLogin should call app.post with correct path 1`] = `
+Array [
+  "/auth/login/",
+  "postLoginHandlerMockFunction",
+]
+`;
