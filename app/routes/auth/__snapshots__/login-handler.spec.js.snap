@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`postLoginHandler should call reponse.send with token 1`] = `
+Array [
+  Object {
+    "token": "mock-token",
+  },
+]
+`;
+
+exports[`postLoginHandler should call reponse.send with token 2`] = `
+Array [
+  Object {
+    "username": "test",
+  },
+]
+`;
+
+exports[`postLoginHandler should call reponse.sendStatus 1`] = `
+Array [
+  401,
+]
+`;
