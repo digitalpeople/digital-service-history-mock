@@ -1,9 +1,5 @@
-import { compare } from '../../utils/hash';
+import matchCredentials from '../../utils/match-credentials';
 import createToken from '../../utils/token';
-import {
-  mockUsername,
-  mockPassword,
-} from '../../../data/mock-credentials';
 
 export const postLoginHandler = async (request, response) => {
   const {
@@ -11,15 +7,10 @@ export const postLoginHandler = async (request, response) => {
     password,
   } = request.body;
 
-  const usernameMatch = username === mockUsername;
-  const passwordMatch = await compare(password, await mockPassword);
-
-  if (usernameMatch && passwordMatch) {
+  if (await matchCredentials(username, password)) {
     const token = createToken({ username });
 
-    response.send({
-      token,
-    });
+    response.send({ token });
   } else {
     response.sendStatus(401);
   }
