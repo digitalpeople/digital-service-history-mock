@@ -2,6 +2,7 @@
 Mock service of digital service history to aid front-end development.
 
 [![Build Status](https://travis-ci.org/digitalpeople/digital-service-history-mock.svg?branch=master)](https://travis-ci.org/digitalpeople/digital-service-history-mock)
+[![Coverage Status](https://coveralls.io/repos/github/digitalpeople/digital-service-history-mock/badge.svg?branch=master)](https://coveralls.io/github/digitalpeople/digital-service-history-mock?branch=master)
 
 ## Available Scripts
 
