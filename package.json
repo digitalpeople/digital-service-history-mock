@@ -12,6 +12,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "jest --coverage",
+    "test:coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:clean": "jest --clearCache"
   },
   "author": "adam.hegedus@yandex.ru",
@@ -30,6 +31,7 @@
     "@babel/node": "^7.5.0",
     "@babel/preset-env": "^7.5.4",
     "babel-jest": "^24.8.0",
+    "coveralls": "^3.0.6",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.0",
