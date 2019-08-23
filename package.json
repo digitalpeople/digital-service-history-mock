@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "jest --coverage",
-    "text:coverage": "jest --coverage | coveralls",
+    "test:coverage": "jest --coverage | coveralls",
     "test:clean": "jest --clearCache"
   },
   "author": "adam.hegedus@yandex.ru",
